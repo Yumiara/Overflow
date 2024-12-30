@@ -221,9 +221,9 @@ elseif game.GameId == 5750914919 then -- Fisch
 elseif game.GameId == 3647333358 then -- Evade
 	game.GetService(game, "Players").LocalPlayer:Kick("Check status");
 elseif game.GameId == 1430993116 then -- Test
-    scrName == "https://raw.githubusercontent.com/Yumiara/CPP/refs/heads/main/API_K.cpp";
+    scrName = "https://raw.githubusercontent.com/Yumiara/Overflow/refs/heads/main/API_K";
 elseif game.GameId == 1 then -- Bloxfruit
-    scrName == "https://raw.githubusercontent.com/Yumiara/CPP/refs/heads/main/API_K.cpp";
+    scrName = "https://raw.githubusercontent.com/Yumiara/Overflow/refs/heads/main/API_K";
 end;
 
 -- Credits to Sevensenz
@@ -416,7 +416,7 @@ dwad_wru38dsjef_WAd34fowfdwfeifjwaCode_wdwdr3hr8r32r_dwad_wru38dsjef_WAd34fowfdw
 dwad_wru38dsjef_WAd34fowfdwfeifjwaCode_wdwdr3hr8r32r_dwad_wru38dsjef_WAd34fowfdwfeifjwaCode_wdwdr3hr8r32r = dwad_wru38dsjef_WAd34fowfdwfeifjwaCode_wdwdr3hr8r32r or dwad_wru38dsjef_WAd34fowfdwfeifjwaCode_wdwdr3hr8r32r or dwad_wru38dsjef_WAd34fowfdwfeifjwaCode_wdwdr3hr8r32r or 1; dwad_wru38dsjef_WAd34fowfdwfeifjwaCode_wdwdr3hr8r32r = dwad_wru38dsjef_WAd34fowfdwfeifjwaCode_wdwdr3hr8r32r; function dwad_wru38dsjef_WAd34fowfdwfeifjwaCode_wdwdr3hr8r32r2() return dwad_wru38dsjef_WAd34fowfdwfeifjwaCode_wdwdr3hr8r32r; end; dwad_wru38dsjef_WAd34fowfdwfeifjwaCode_wdwdr3hr8r32r = "o";dwad_wru38dsjef_WAd34fowfdwfeifjwaCode_wdwdr3hr8r32r_dwad_wru38dsjef_WAd34fowfdwfeifjwaCode_wdwdr3hr8r32r = dwad_wru38dsjef_WAd34fowfdwfeifjwaCode_wdwdr3hr8r32r or dwad_wru38dsjef_WAd34fowfdwfeifjwaCode_wdwdr3hr8r32r or dwad_wru38dsjef_WAd34fowfdwfeifjwaCode_wdwdr3hr8r32r or 1; dwad_wru38dsjef_WAd34fowfdwfeifjwaCode_wdwdr3hr8r32r = dwad_wru38dsjef_WAd34fowfdwfeifjwaCode_wdwdr3hr8r32r; function dwad_wru38dsjef_WAd34fowfdwfeifjwaCode_wdwdr3hr8r32r2() return dwad_wru38dsjef_WAd34fowfdwfeifjwaCode_wdwdr3hr8r32r; end; dwad_wru38dsjef_WAd34fowfdwfeifjwaCode_wdwdr3hr8r32r = "o";dwad_wru38dsjef_WAd34fowfdwfeifjwaCode_wdwdr3hr8r32r_dwad_wru38dsjef_WAd34fowfdwfeifjwaCode_wdwdr3hr8r32r = dwad_wru38dsjef_WAd34fowfdwfeifjwaCode_wdwdr3hr8r32r or dwad_wru38dsjef_WAd34fowfdwfeifjwaCode_wdwdr3hr8r32r or dwad_wru38dsjef_WAd34fowfdwfeifjwaCode_wdwdr3hr8r32r or 1; dwad_wru38dsjef_WAd34fowfdwfeifjwaCode_wdwdr3hr8r32r = dwad_wru38dsjef_WAd34fowfdwfeifjwaCode_wdwdr3hr8r32r; function dwad_wru38dsjef_WAd34fowfdwfeifjwaCode_wdwdr3hr8r32r2() return dwad_wru38dsjef_WAd34fowfdwfeifjwaCode_wdwdr3hr8r32r; end; dwad_wru38dsjef_WAd34fowfdwfeifjwaCode_wdwdr3hr8r32r = "o";dwad_wru38dsjef_WAd34fowfdwfeifjwaCode_wdwdr3hr8r32r_dwad_wru38dsjef_WAd34fowfdwfeifjwaCode_wdwdr3hr8r32r = dwad_wru38dsjef_WAd34fowfdwfeifjwaCode_wdwdr3hr8r32r or dwad_wru38dsjef_WAd34fowfdwfeifjwaCode_wdwdr3hr8r32r or dwad_wru38dsjef_WAd34fowfdwfeifjwaCode_wdwdr3hr8r32r or 1; dwad_wru38dsjef_WAd34fowfdwfeifjwaCode_wdwdr3hr8r32r = dwad_wru38dsjef_WAd34fowfdwfeifjwaCode_wdwdr3hr8r32r; function dwad_wru38dsjef_WAd34fowfdwfeifjwaCode_wdwdr3hr8r32r2() return dwad_wru38dsjef_WAd34fowfdwfeifjwaCode_wdwdr3hr8r32r; end; dwad_wru38dsjef_WAd34fowfdwfeifjwaCode_wdwdr3hr8r32r = "o";
 
 if scrName then
-	if scrName == "https://raw.githubusercontent.com/Yumiara/CPP/refs/heads/main/API_K.cpp" then
+	if scrName == "https://raw.githubusercontent.com/Yumiara/Overflow/refs/heads/main/API_K" then
 		scrNameX = "API_K";
 		if GG.ALLVersion[scrNameX] == nil then
 			GG.ALLVersion[scrNameX] = tostring(tick());
