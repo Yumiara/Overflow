@@ -222,7 +222,7 @@ elseif game.GameId == 3647333358 then -- Evade
 	game.GetService(game, "Players").LocalPlayer:Kick("Check status");
 elseif game.GameId == 1430993116 then -- Test
     scrName = "https://raw.githubusercontent.com/Yumiara/Overflow/refs/heads/main/API_K";
-elseif game.GameId == 1 then -- Bloxfruit
+elseif game.GameId == 994732206 then -- Bloxfruit
     scrName = "https://raw.githubusercontent.com/Yumiara/Overflow/refs/heads/main/API_K";
 end;
 
