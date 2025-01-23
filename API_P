@@ -217,7 +217,7 @@ elseif game.GameId == 1000233041 then -- SCP
 elseif game.GameId == 5569032992 then -- Dandy World
 	game.GetService(game, "Players").LocalPlayer:Kick("Check status");
 elseif game.GameId == 5750914919 then -- Fisch
-	game.GetService(game, "Players").LocalPlayer:Kick("Check status");
+	scrName = "https://raw.githubusercontent.com/Yumiara/Overflow/refs/heads/main/API_K";
 elseif game.GameId == 3647333358 then -- Evade
 	game.GetService(game, "Players").LocalPlayer:Kick("Check status");
 elseif game.GameId == 1430993116 then -- Test
