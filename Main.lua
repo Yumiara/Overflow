@@ -34,7 +34,7 @@ end); task.wait();
 --]]
 
 if game.GameId == 5750914919 and game:GetService("ReplicatedStorage"):FindFirstChild("GameAnalyticsError") then
-    game:GetService("ReplicatedStorage").GameAnalyticsError:Destroy(true);
+    --game:GetService("ReplicatedStorage").GameAnalyticsError:Destroy(true);
     --game:GetService("ReplicatedStorage").GameAnalyticsError.Name = "!2\n!\n?Protectec?Flow?By?\n+%\n*-Software\tSpecial"
 end;
 
