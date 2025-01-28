@@ -42,7 +42,10 @@ end;
 local GG = (getgenv and getgenv()) or _G or shared;
 GG.HttpsSer = game.GetService(game, 'HttpService');
 
-GG.TotemList = {"Windset Totem","Blizzard Totem","Tempest Totem","Aurora Totem","Avalanche Totem","Zeus Storm Totem","Poseidon Wrath Totem","Meteor Totem","Sundial Totem","Eclipse Totem","Smokescreen Totem"}
+while true do
+    GG.TotemList = {"Windset Totem","Blizzard Totem","Tempest Totem","Aurora Totem","Avalanche Totem","Zeus Storm Totem","Poseidon Wrath Totem","Meteor Totem","Sundial Totem","Eclipse Totem","Smokescreen Totem"};
+    task.wait(4);
+end;
 
 function getfolder(obj)
     if isfolder then
