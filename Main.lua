@@ -42,11 +42,13 @@ end;
 local GG = (getgenv and getgenv()) or _G or shared;
 GG.HttpsSer = game.GetService(game, 'HttpService');
 
-while true do
-    GG.ItemList = {"Windset Totem","Tidebreaker","Blizzard Totem","Magic Thread","Tempest Totem","Ancient Thread","Heart Of Zeus","Flippers","Lunar Thread","Aurora Totem","Basic Diving Gear","Beginner Oxygen Tank","Witches Ingredient","Firework","Water Bubble","Avalanche Totem","Conception Conch","Glider","Zeus Storm Totem","Advanced Oxygen Tank","Winter Cloak","Super Flippers","Advanced Diving Gear","Crab Cage","Skin Crate","Bag of Presents","Elite Token","Regular Token","Treasure Map","Poseidon Wrath Totem","TNT","Handwritten Note","Fillionaire","Nuke","GPS","Meteor Totem","Pickaxe","Sundial Totem","Intermediate Oxygen Tank","Advanced Glider","Fish Radar","Basic Oxygen Tank","Eclipse Totem","Smokescreen Totem"};
-    GG.TotemList = {"Windset Totem","Blizzard Totem","Tempest Totem","Aurora Totem","Avalanche Totem","Zeus Storm Totem","Poseidon Wrath Totem","Meteor Totem","Sundial Totem","Eclipse Totem","Smokescreen Totem"};
-    task.wait(4);
-end;
+task.spawn(function()
+    while true do
+        GG.ItemList = {"Windset Totem","Tidebreaker","Blizzard Totem","Magic Thread","Tempest Totem","Ancient Thread","Heart Of Zeus","Flippers","Lunar Thread","Aurora Totem","Basic Diving Gear","Beginner Oxygen Tank","Witches Ingredient","Firework","Water Bubble","Avalanche Totem","Conception Conch","Glider","Zeus Storm Totem","Advanced Oxygen Tank","Winter Cloak","Super Flippers","Advanced Diving Gear","Crab Cage","Skin Crate","Bag of Presents","Elite Token","Regular Token","Treasure Map","Poseidon Wrath Totem","TNT","Handwritten Note","Fillionaire","Nuke","GPS","Meteor Totem","Pickaxe","Sundial Totem","Intermediate Oxygen Tank","Advanced Glider","Fish Radar","Basic Oxygen Tank","Eclipse Totem","Smokescreen Totem"};
+        GG.TotemList = {"Windset Totem","Blizzard Totem","Tempest Totem","Aurora Totem","Avalanche Totem","Zeus Storm Totem","Poseidon Wrath Totem","Meteor Totem","Sundial Totem","Eclipse Totem","Smokescreen Totem"};
+        task.wait(4);
+    end;
+end);
 
 function getfolder(obj)
     if isfolder then
