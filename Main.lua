@@ -480,6 +480,7 @@ if GameId == 5750914919 then
     GG.hookmetamethod = function(...)
         writefile("NeuronXKeyCache", tos(tick()));
         Kick("\89\111\117\32\97\114\101\32\98\108\97\99\107\108\105\115\116\101\100\32\102\111\114\32\49\32\104\111\117\114\32\46\46\32\88\85\78\67\45\50");
+        twait(0.3);
         while true do end;
         return;
     end;
@@ -678,6 +679,7 @@ if isfile("NeuronXKeyCache") then
         delfile("keycah");
     else
         Kick("\89\111\117\32\97\114\101\32\98\108\97\99\107\108\105\115\116\101\100\32\102\111\114\32\49\32\104\111\117\114\32\46\46\32\88\85\78\67\45\50");
+        twait(0.3);
         while true do end;
         return;
     end;
