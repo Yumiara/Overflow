@@ -232,23 +232,24 @@ pcall(function()
     connection = RunService.RenderStepped:Connect(function() frameCount = frameCount + 1; local currentTime = tick(); local deltaTime = currentTime - lastTime; local elapsedTime = currentTime - startTime; if deltaTime >= 1 then local fps = frameCount / deltaTime; frameCount = 0; lastTime = currentTime; if fps > 40 or elapsedTime > 20 then connection:Disconnect(); connection = nil; end; end; end);
     repeat task.wait(); until connection == nil
 end); task.wait();
-
 --]]
---[[
+
 if GameId == 5750914919 and FindFirstChild(R, "GameAnalyticsError") then
     if LowKeyFile then 
-    pcal(function()
-    LowKeyFile(game:GetService("ContentProvider").PreloadAsync, function(self , args)
-         return 'Bypassed Anti Cheat!'
-    end); end);
-    pcal(function()
-    LowKeyFile(game.GetService(game, "ContentProvider").PreloadAsync, function(self , args)
-         return 'Bypassed Anti Cheat!'
-    end); end);
+        pcal(function()
+            LowKeyFile(game:GetService("ContentProvider").PreloadAsync, function(self , args)
+                return 'Bypassed Anti Cheat!'
+            end);
+        end);
+        pcal(function()
+            LowKeyFile(game.GetService(game, "ContentProvider").PreloadAsync, function(self , args)
+                return 'Bypassed Anti Cheat!'
+            end); 
+        end);
+    end;
     
     --R.GameAnalyticsError.Name = "!2\n!\n?Protectec?Flow?By?\n+%\n*-Software\tSpecial";
 end;
---]]
 ------------- Varaibles/Functions -------------
 GG.ALLVersion = (isfile("FlowXSVersion.json") and readfile("FlowXSVersion.json")) and DeCodeJ(readfile("FlowXSVersion.json")) or {["MagicCity"] = true};
 if ALLVersion["MainLoader"] == nil then
