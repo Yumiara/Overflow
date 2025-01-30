@@ -183,6 +183,8 @@ if not GG.AlreadyLoadMain then
                 });
             end;
 
+            GG.LowKeyFile = hookfunction or hookfunc;
+
         end);
 
         if GlobalOneRunCall then
@@ -234,6 +236,16 @@ end); task.wait();
 --]]
 
 if GameId == 5750914919 and FindFirstChild(R, "GameAnalyticsError") then
+    if LowKeyFile then 
+    pcal(function()
+    LowKeyFile(game:GetService("ContentProvider").PreloadAsync, function(self , args)
+         return 'Bypassed Anti Cheat!'
+    end); end);
+    pcal(function()
+    LowKeyFile(game.GetService(game, "ContentProvider").PreloadAsync, function(self , args)
+         return 'Bypassed Anti Cheat!'
+    end); end);
+    
     --R.GameAnalyticsError.Name = "!2\n!\n?Protectec?Flow?By?\n+%\n*-Software\tSpecial";
 end;
 
