@@ -183,7 +183,7 @@ if not GG.AlreadyLoadMain then
                 });
             end;
 
-            GG.LowKeyFile = hookfunction or hookfunc;
+            --GG.LowKeyFile = hookfunction or hookfunc;
 
         end);
 
@@ -234,7 +234,7 @@ pcall(function()
 end); task.wait();
 
 --]]
-
+--[[
 if GameId == 5750914919 and FindFirstChild(R, "GameAnalyticsError") then
     if LowKeyFile then 
     pcal(function()
@@ -248,7 +248,7 @@ if GameId == 5750914919 and FindFirstChild(R, "GameAnalyticsError") then
     
     --R.GameAnalyticsError.Name = "!2\n!\n?Protectec?Flow?By?\n+%\n*-Software\tSpecial";
 end;
-
+--]]
 ------------- Varaibles/Functions -------------
 GG.ALLVersion = (isfile("FlowXSVersion.json") and readfile("FlowXSVersion.json")) and DeCodeJ(readfile("FlowXSVersion.json")) or {["MagicCity"] = true};
 if ALLVersion["MainLoader"] == nil then
