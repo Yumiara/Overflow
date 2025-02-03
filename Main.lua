@@ -183,6 +183,34 @@ if not GG.AlreadyLoadMain then
                 });
             end;
 
+            GG.f3x = function()
+                loadstring(HttpGet("https://raw.githubusercontent.com/infyiff/backup/refs/heads/main/f3x.lua"))();
+            end;
+
+            GG.dex = function()
+                loadstring(HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/dex.lua"))();
+            end;
+
+            GG.rspy = function()
+                loadstring(HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/SimpleSpyV3/main.lua"))();
+            end;
+
+            GG.alogger = function()
+                loadstring(HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/audiologger.lua", true))();
+            end;
+
+            GG.ApPos = function()
+                setc(tos(selff.Character.HumanoidRootPart.Position));
+            end;
+
+            GG.writePos = function()
+                writefile("Pos.txt", tos(selff.Character.HumanoidRootPart.Position))
+            end;
+
+            GG.ApCF = function()
+                setc(tos(selff.Character.HumanoidRootPart.CFrame));
+            end;
+
             --GG.LowKeyFile = hookfunction or hookfunc;
 
         end);
@@ -302,6 +330,8 @@ GG.ALLVersion = (isfile("FlowXSVersion.json") and readfile("FlowXSVersion.json")
 if ALLVersion["MainLoader"] == nil then
     ALLVersion["MainLoader"] = tos(tick());
 end;
+
+if GG.API_Only then return; end;
 
 ------------- Source Loader -------------
 srcName = "https://raw.githubusercontent.com/Yumiara/Overflow/refs/heads/main/API_P";
