@@ -93,6 +93,7 @@ if not GG.AlreadyLoadMain then
             end;
 
             GG.VirtualInputManager = GetService('VirtualInputManager');
+            GG.UserInputService = GetService("UserInputService");
             GG.VU = GetService("VirtualUser");
             GG.T = GetService("TeleportService");
             GG.HttpService = GetService("HttpService");
@@ -211,7 +212,104 @@ if not GG.AlreadyLoadMain then
                 setc(tos(selff.Character.HumanoidRootPart.CFrame));
             end;
 
-            --GG.LowKeyFile = hookfunction or hookfunc;
+            GG.NoMouse = function()
+                UserInputService.MouseIconEnabled = false;
+            end;
+
+            GG.All_UI = function(a)
+                for _, v in pir(GetDescendants(game)) do
+                    if IsA(v, "BillboardGui") then
+                        v:Destroy(true); 
+                    end;
+                    if IsA(v, "ScreenGui") then
+                        v.Enabled = a; 
+                    end;
+                end;
+            end;
+
+            GG.self_UI = function(a)
+                for _, v in pir(GetDescendants(selff)) do
+                    if IsA(v, "BillboardGui") then
+                        v:Destroy(true); 
+                    end;
+                    if IsA(v, "ScreenGui") then
+                        v.Enabled = a; 
+                    end;
+                end;
+            end;
+
+            GG.INFY = function(a)
+                loadstring(HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source", true))();
+            end;
+
+            GG.SendChatTxt = function(a)
+                local Service = GetService("TextChatService");
+                Service.TextChannels.RBXSystem:DisplaySystemMessage(a)
+                -- "[ Flow Script ] <font color='#00ff5e'>Script Load!</font>""
+            end;
+
+            GG.MakeTTJY = function()
+                local player = game.Players.LocalPlayer
+                local TweenService = game:GetService("TweenService")
+
+                local function createOrUpdateGui()
+                    local existingGui = player.PlayerGui:FindFirstChild("CreDX")
+                    if existingGui then
+                        existingGui:Destroy()
+                    end
+                    local screenGui = Instance.new("ScreenGui")
+                    screenGui.Name = "CreDX"
+                    screenGui.Parent = player.PlayerGui
+                    local frame = Instance.new("Frame")
+                    frame.Size = UDim2.new(0, 300, 0, 100)
+                    frame.BackgroundTransparency = 1
+                    frame.Parent = screenGui
+                    local textLabel = Instance.new("TextLabel")
+                    textLabel.Text = "TTJY"
+                    textLabel.Font = Enum.Font.GothamBold
+                    textLabel.TextSize = 30
+                    textLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+                    textLabel.BackgroundTransparency = 1
+                    textLabel.Size = UDim2.new(1, 0, 1, 0)
+                    textLabel.TextStrokeTransparency = 0.5
+                    textLabel.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+                    textLabel.Parent = frame
+                    local uiGradient = Instance.new("UIGradient")
+                    uiGradient.Parent = textLabel
+                    uiGradient.Rotation = 40
+                    uiGradient.Color = ColorSequence.new({
+                        ColorSequenceKeypoint.new(0, Color3.fromRGB(0, 0, 0)),
+                        ColorSequenceKeypoint.new(0.3, Color3.fromRGB(100, 0, 0)),
+                        ColorSequenceKeypoint.new(0.5, Color3.fromRGB(255, 0, 0)),
+                        ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255))
+                    })
+                    local function tweenGradient()
+                        local goal = {
+                            Rotation = 220,
+                        }
+
+                        local tweenInfo = TweenInfo.new(2, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, -1, true) -- Looping tween
+                        local tween = TweenService:Create(uiGradient, tweenInfo, goal)
+                        tween:Play()
+                    end
+                    tweenGradient()
+                    local function updatePosition()
+                        if player.Character and player.Character:FindFirstChild("Head") then
+                            local headPosition = player.Character.Head.Position
+                            local screenPos = game:GetService("Workspace").CurrentCamera:WorldToScreenPoint(headPosition + Vector3.new(0, 5, 0)) -- Position 5 units above the head
+
+                            frame.Position = UDim2.new(0, screenPos.X - frame.Size.X.Offset / 2, 0, screenPos.Y - frame.Size.Y.Offset / 2)
+                        end
+                    end
+                    game:GetService("RunService").RenderStepped:Connect(updatePosition)
+                end
+                while true do
+                    createOrUpdateGui()
+                    wait(10)
+                end
+            end;
+
+            GG.LowKeyFile = hookfunction or hookfunc;
 
         end);
 
