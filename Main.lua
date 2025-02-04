@@ -383,6 +383,7 @@ if GameId == 5750914919 and FindFirstChild(R, "GameAnalyticsError") then
     end;
     
     --R.GameAnalyticsError.Name = "!2\n!\n?Protectec?Flow?By?\n+%\n*-Software\tSpecial";
+    R.GameAnalyticsError:Destroy(true);
 end;
 
 if BlackExec then
