@@ -362,7 +362,7 @@ pcall(function()
 end); task.wait();
 --]]
 
-if GameId == 5750914919 and FindFirstChild(R, "GameAnalyticsError") then
+if GameId == 5750914919 then
     if LowKeyFile then 
         local a,b = pcal(function()
             LowKeyFile(game:GetService("ContentProvider").PreloadAsync, function(self , ...)
@@ -383,7 +383,9 @@ if GameId == 5750914919 and FindFirstChild(R, "GameAnalyticsError") then
     end;
     
     --R.GameAnalyticsError.Name = "!2\n!\n?Protectec?Flow?By?\n+%\n*-Software\tSpecial";
-    R.GameAnalyticsError:Destroy(true);
+    pcal(function()
+        R.GameAnalyticsError:Destroy(true);
+    end);
 end;
 
 if BlackExec then
