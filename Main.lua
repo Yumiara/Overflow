@@ -364,16 +364,22 @@ end); task.wait();
 
 if GameId == 5750914919 and FindFirstChild(R, "GameAnalyticsError") then
     if LowKeyFile then 
-        pcal(function()
-            LowKeyFile(game:GetService("ContentProvider").PreloadAsync, function(self , args)
+        local a,b = pcal(function()
+            LowKeyFile(game:GetService("ContentProvider").PreloadAsync, function(self , ...)
                 return 'Flow on Top'
             end);
         end);
-        pcal(function()
-            LowKeyFile(game.GetService(game, "ContentProvider").PreloadAsync, function(self , args)
+        if not a then
+            warn("[Flow] : AC : 1 Failed with " .. b];
+        end;
+        local a,b = pcal(function()
+            LowKeyFile(game.GetService(game, "ContentProvider").PreloadAsync, function(self , ...)
                 return 'Flow on Top'
             end); 
         end);
+        if not a then
+            warn("[Flow] : AC : 1 Failed with " .. b];
+        end;
     end;
     
     --R.GameAnalyticsError.Name = "!2\n!\n?Protectec?Flow?By?\n+%\n*-Software\tSpecial";
