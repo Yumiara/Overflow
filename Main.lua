@@ -384,7 +384,7 @@ if GameId == 5750914919 then
     
     --R.GameAnalyticsError.Name = "!2\n!\n?Protectec?Flow?By?\n+%\n*-Software\tSpecial";
     pcal(function()
-        R.GameAnalyticsError:Destroy(true);
+        --R.GameAnalyticsError:Destroy(true);
     end);
 end;
 
