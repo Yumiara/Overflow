@@ -1,0 +1,208 @@
+local G2L = {};
+
+local MainI = nil;
+
+G2L["1"] = Instance.new("ScreenGui", game:GetService("CoreGui"));
+G2L["1"]["Name"] = [[1RunSecure]];
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+
+MainI = G2L["1"];
+
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2"]["AnchorPoint"] = Vector2.new(1, 0);
+G2L["2"]["Size"] = UDim2.new(0.24063, 0, 0.02436, 0);
+G2L["2"]["Position"] = UDim2.new(0.98, 0, 0.95, 0);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["Name"] = [[Debug]];
+G2L["2"]["BackgroundTransparency"] = 1;
+
+G2L["3"] = Instance.new("TextLabel", G2L["2"]);
+G2L["3"]["TextStrokeTransparency"] = 0;
+G2L["3"]["BorderSizePixel"] = 0;
+G2L["3"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["3"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3"]["TextSize"] = 14;
+G2L["3"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3"]["BackgroundTransparency"] = 0.75;
+G2L["3"]["RichText"] = true;
+G2L["3"]["Size"] = UDim2.new(0.36387, 0, 1, 0);
+G2L["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3"]["Text"] = [[Version: 1Run3.210]];
+G2L["3"]["Name"] = [[Version]];
+G2L["3"]["Position"] = UDim2.new(0.63613, 0, -10.64178, 0);
+
+
+-- StarterGui.1RunSecure.Debug.UIListLayout
+G2L["4"] = Instance.new("UIListLayout", G2L["2"]);
+G2L["4"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Right;
+G2L["4"]["Padding"] = UDim.new(0, 1);
+G2L["4"]["VerticalAlignment"] = Enum.VerticalAlignment.Bottom;
+G2L["4"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+
+-- StarterGui.1RunSecure.Debug.Speed
+G2L["5"] = Instance.new("TextLabel", G2L["2"]);
+G2L["5"]["TextStrokeTransparency"] = 0;
+G2L["5"]["BorderSizePixel"] = 0;
+G2L["5"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["5"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5"]["TextSize"] = 14;
+G2L["5"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5"]["BackgroundTransparency"] = 0.75;
+G2L["5"]["Size"] = UDim2.new(0.60554, 0, 1, 0);
+G2L["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5"]["Text"] = "Speed:[Character(12), Walk(12)]";
+G2L["5"]["LayoutOrder"] = 5;
+G2L["5"]["Name"] = [[Speed]];
+G2L["5"]["Position"] = UDim2.new(0.39446, 0, -3.21415, 0);
+
+
+-- StarterGui.1RunSecure.Debug.GlobalWind
+G2L["6"] = Instance.new("TextLabel", G2L["2"]);
+G2L["6"]["TextStrokeTransparency"] = 0;
+G2L["6"]["BorderSizePixel"] = 0;
+G2L["6"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["6"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6"]["TextSize"] = 14;
+G2L["6"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6"]["BackgroundTransparency"] = 0.75;
+G2L["6"]["Size"] = UDim2.new(0.44805, 0, 1, 0);
+G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6"]["Text"] = "Global Wind:(-5, 0, -5)]";
+G2L["6"]["LayoutOrder"] = 4;
+G2L["6"]["Name"] = [[GlobalWind]];
+G2L["6"]["Position"] = UDim2.new(0.55195, 0, -4.28553, 0);
+
+
+-- StarterGui.1RunSecure.Debug.ServerAge
+G2L["7"] = Instance.new("TextLabel", G2L["2"]);
+G2L["7"]["TextStrokeTransparency"] = 0;
+G2L["7"]["BorderSizePixel"] = 0;
+G2L["7"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["7"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7"]["TextSize"] = 14;
+G2L["7"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["7"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7"]["BackgroundTransparency"] = 0.75;
+G2L["7"]["Size"] = UDim2.new(0.55395, 0, 1, 0);
+G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7"]["Text"] = "Server Age:[Client(0:0:1:6)]";
+G2L["7"]["LayoutOrder"] = 3;
+G2L["7"]["Name"] = [[ServerAge]];
+G2L["7"]["Position"] = UDim2.new(0.44605, 0, -5.35691, 0);
+
+
+-- StarterGui.1RunSecure.Debug.Framerate
+G2L["8"] = Instance.new("TextLabel", G2L["2"]);
+G2L["8"]["TextStrokeTransparency"] = 0;
+G2L["8"]["BorderSizePixel"] = 0;
+G2L["8"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["8"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8"]["TextSize"] = 14;
+G2L["8"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8"]["BackgroundTransparency"] = 0.75;
+G2L["8"]["Size"] = UDim2.new(0.64356, 0, 1, 0);
+G2L["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8"]["Text"] = "Framerate:[FPS(54.01), MS(18.52)]";
+G2L["8"]["LayoutOrder"] = 2;
+G2L["8"]["Name"] = [[Framerate]];
+G2L["8"]["Position"] = UDim2.new(0.35644, 0, -7.49967, 0);
+
+
+-- StarterGui.1RunSecure.Debug.-
+G2L["9"] = Instance.new("TextLabel", G2L["2"]);
+G2L["9"]["TextStrokeTransparency"] = 0;
+G2L["9"]["BorderSizePixel"] = 0;
+G2L["9"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["9"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9"]["TextSize"] = 14;
+G2L["9"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["9"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9"]["BackgroundTransparency"] = 1;
+G2L["9"]["RichText"] = true;
+G2L["9"]["Size"] = UDim2.new(0.02715, 0, 1.99935, 0);
+G2L["9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9"]["Text"] = [[]];
+G2L["9"]["LayoutOrder"] = 1;
+G2L["9"]["Name"] = [[-]];
+G2L["9"]["Position"] = UDim2.new(0.97285, 0, -9.5704, 0);
+
+
+-- StarterGui.1RunSecure.Debug.Humanoid
+G2L["a"] = Instance.new("TextLabel", G2L["2"]);
+G2L["a"]["TextStrokeTransparency"] = 0;
+G2L["a"]["BorderSizePixel"] = 0;
+G2L["a"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["a"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a"]["TextSize"] = 14;
+G2L["a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a"]["BackgroundTransparency"] = 0.75;
+G2L["a"]["Size"] = UDim2.new(2.44118, 0, 1, 0);
+G2L["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a"]["Text"] = [[Humanoid:[MoveDirection(0.197, 0, -0.98), FloorMaterial(Enum.Material.Grass), Sit(false), PlatformStand(false), Jump(false)];]]
+G2L["a"]["LayoutOrder"] = 5;
+G2L["a"]["Name"] = [[Humanoid]];
+G2L["a"]["Position"] = UDim2.new(-1.44118, 0, -2.14277, 0);
+
+
+-- StarterGui.1RunSecure.Debug.Mouse
+G2L["b"] = Instance.new("TextLabel", G2L["2"]);
+G2L["b"]["TextStrokeTransparency"] = 0;
+G2L["b"]["BorderSizePixel"] = 0;
+G2L["b"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["b"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b"]["TextSize"] = 14;
+G2L["b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b"]["BackgroundTransparency"] = 0.75;
+G2L["b"]["Size"] = UDim2.new(1.42561, 0, 1, 0);
+G2L["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b"]["Text"] = "Mouse:[Position(-52.812, 42, 61.733), Target(Workspace.Maps.School.Part)]";
+G2L["b"]["LayoutOrder"] = 5;
+G2L["b"]["Name"] = [[Mouse]];
+G2L["b"]["Position"] = UDim2.new(-0.42561, 0, -1.07138, 0);
+
+
+-- StarterGui.1RunSecure.Debug.Grab
+G2L["c"] = Instance.new("TextLabel", G2L["2"]);
+G2L["c"]["TextStrokeTransparency"] = 0;
+G2L["c"]["BorderSizePixel"] = 0;
+G2L["c"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c"]["TextSize"] = 14;
+G2L["c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["c"]["BackgroundTransparency"] = 0.75;
+G2L["c"]["Size"] = UDim2.new(1.3007, 0, 1, 0);
+G2L["c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c"]["Text"] = "AutoGrabDes : true, AutoGrabSpeDes : true, AutoGrabSpeChild : true]";
+G2L["c"]["LayoutOrder"] = 5;
+G2L["c"]["Name"] = [[Grab]];
+G2L["c"]["Position"] = UDim2.new(-0.3007, 0, 0, 0);
+
+
+-- StarterGui.1RunSecure.Debug.Framerate
+G2L["d"] = Instance.new("TextLabel", G2L["2"]);
+G2L["d"]["TextStrokeTransparency"] = 0;
+G2L["d"]["BorderSizePixel"] = 0;
+G2L["d"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["d"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d"]["TextSize"] = 14;
+G2L["d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["d"]["BackgroundTransparency"] = 0.75;
+G2L["d"]["Size"] = UDim2.new(0.2281, 0, 1, 0);
+G2L["d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d"]["Text"] = [[Players : 1]];
+G2L["d"]["LayoutOrder"] = 2;
+G2L["d"]["Name"] = [[Framerate]];
+G2L["d"]["Position"] = UDim2.new(0.7719, 0, -6.42829, 0);
+
+return MainI;
