@@ -1,4 +1,4 @@
-local G2L = {};
+G2L = {};
 
 local MainI = nil;
 
