@@ -205,4 +205,4 @@ G2L["d"]["LayoutOrder"] = 2;
 G2L["d"]["Name"] = [[Framerate]];
 G2L["d"]["Position"] = UDim2.new(0.7719, 0, -6.42829, 0);
 
-return MainI;
+return G2L["1"], require;
