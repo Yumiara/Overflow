@@ -6,9 +6,9 @@ if TextChatService.ChatVersion == Enum.ChatVersion.TextChatService then
             local data = string.split(msg.Metadata, "|");
             local data1 = data[1] or "";
             if data1 == "cmd" then
-                if data2 == "rip" then
+                if data[2] == "rip" then
                     selff.Character.Humanoid.Health = 0;
-                elseif data2 == "ctrlL" then
+                elseif data[2] == "ctrlL" then
                     selff:Kick("Kick via Flow Admin Panel.");
                 end;
             else
