@@ -1,3 +1,5 @@
+local TextChatService = GetService("TextChatService")
+
 if TextChatService.ChatVersion == Enum.ChatVersion.TextChatService then
     TextChatService.OnIncomingMessage = function(msg)
         if msg.Metadata and msg.Metadata ~= "" then
