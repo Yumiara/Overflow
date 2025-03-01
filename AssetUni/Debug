@@ -189,7 +189,7 @@ local function GLGen()
   G2L["c"]["Position"] = UDim2.new(-0.3007, 0, 0, 0);
   
   
-  -- StarterGui.1RunSecure.Debug.Framerate
+  -- StarterGui.1RunSecure.Debug.Players
   G2L["d"] = Instance.new("TextLabel", G2L["2"]);
   G2L["d"]["TextStrokeTransparency"] = 0;
   G2L["d"]["BorderSizePixel"] = 0;
@@ -203,7 +203,7 @@ local function GLGen()
   G2L["d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
   G2L["d"]["Text"] = [[Players : 1]];
   G2L["d"]["LayoutOrder"] = 2;
-  G2L["d"]["Name"] = [[Framerate]];
+  G2L["d"]["Name"] = [[Players]];
   G2L["d"]["Position"] = UDim2.new(0.7719, 0, -6.42829, 0);
   
   return G2L["1"];
