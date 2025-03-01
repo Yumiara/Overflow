@@ -1,0 +1,6 @@
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoid = character:WaitForChild("Humanoid")
+local targetPosition = game.Players.rigga5669.Character.HumanoidRootPart.Position
+
+humanoid:MoveTo(targetPosition)
