@@ -116,6 +116,10 @@ if not GG.AlreadyLoadMain then
 
             GG.cmdm = selff:GetMouse();
 
+            function dist(position)
+                return selff:DistanceFromCharacter(position);
+            end;
+
             GG.Kick = function(a)
                 return selff:Kick(tos(a));
             end;
