@@ -116,7 +116,7 @@ if not GG.AlreadyLoadMain then
 
             GG.cmdm = selff:GetMouse();
 
-            function dist(position)
+            GG.dist = function(position)
                 return selff:DistanceFromCharacter(position);
             end;
 
