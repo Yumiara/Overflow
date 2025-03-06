@@ -392,7 +392,7 @@ if GameId == 5750914919 then
     end);
 end;
 
-if GameId == 1235188606 and #GG.FoodList <= 0 then
+if GameId == 1235188606 and not GG.FoodList then
     GG.FoodList = {"GreenAngelfish","PricklyPear","Avacado","BlueFish","Long-Nose","DesertRay","JuniperBerry","Apple","Kelp","Bacon","SabertoothWhale","SnowMinnow","Cherry","TitanScaleShark","GlowingMushroom","BrownFish","CandyCane","Pineapple","SandFish","Pear","Pumpkin","SunOrange","RainbowPirahna","RainbowArapaima","Chili","Meat","Lime","GreatWhiteShark","CottonCandy","Carrot","PinkAngelfish","GlowRay","GreatHornedEel","BlueWhale","JungleFish","GoldenDragonfruit","DragonFin","Goldfish","ToxicEel","Grapes","Blueberry","Strawberry","SunWhale","Almond","Peach","Lemon","Mushroom","SpeckledMantaRay","Dragonfruit","GoldenPear","GemtoothedPiranha","Onion","Coconut","GoldenApple","Corn","GrasslandFish","CandyCorn","RadioactiveSquid","CacaoBean","Banana","HoloMantaRay","Watermelon","Potato","SunriseCrab","Broccoli","DeepSeaCrab","Mothback","AncientSquid"};
     GG.HealList = {"DragonRevivalHeart","BasicHealingPotion","RevivalHeart","MagicalBandages","DragonscaleBandages","Bandages","GoldenRevivalHeart","DragonBreathHealingPotion","GemstoneHealingPotion"};
     GG.WorldList = {"Jungle","Undercity","Ocean","Desert","Prehistoric","Grassland","Fantasy","Toxic","Volcano","Lobby","Tundra"};
