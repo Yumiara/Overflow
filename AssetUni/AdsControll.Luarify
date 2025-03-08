@@ -1,0 +1,66 @@
+local TweenService = game:GetService("TweenService")
+local gui = Instance.new("ScreenGui")
+gui.Parent = game:GetService("CoreGui")
+gui.IgnoreGuiInset = true
+gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling -- Ensures higher ZIndex is respected
+
+local frame = Instance.new("Frame")
+frame.Size = UDim2.new(0, 0, 0, 0)
+frame.Position = UDim2.new(0.5, 0, 0.5, 0)
+frame.AnchorPoint = Vector2.new(0.5, 0.5)
+frame.BackgroundColor3 = Color3.fromRGB(32, 38, 51)
+frame.ZIndex = 10
+frame.Parent = gui
+
+local frameCorner = Instance.new("UICorner")
+frameCorner.CornerRadius = UDim.new(0, 4)
+frameCorner.Parent = frame
+
+local frameStroke = Instance.new("UIStroke")
+frameStroke.Color = Color3.fromRGB(152, 181, 255)
+frameStroke.Thickness = 1
+frameStroke.Parent = frame
+
+local button1 = Instance.new("TextButton")
+button1.Size = UDim2.new(0.8, 0, 0.3, 0)
+button1.Position = UDim2.new(0.1, 0, 0.2, 0)
+button1.BackgroundColor3 = Color3.fromRGB(32, 38, 51)
+button1.TextColor3 = Color3.fromRGB(210, 210, 210)
+button1.Text = "Linkvertise"
+button1.Font = Enum.Font.GothamBold
+button1.TextSize = 12
+button1.ZIndex = 11
+button1.Parent = frame
+
+local button1Corner = Instance.new("UICorner")
+button1Corner.CornerRadius = UDim.new(0, 4)
+button1Corner.Parent = button1
+
+local button2 = Instance.new("TextButton")
+button2.Size = UDim2.new(0.8, 0, 0.3, 0)
+button2.Position = UDim2.new(0.1, 0, 0.6, 0)
+button2.BackgroundColor3 = Color3.fromRGB(32, 38, 51)
+button2.TextColor3 = Color3.fromRGB(210, 210, 210)
+button2.Text = "Lootlab"
+button2.Font = Enum.Font.GothamBold
+button2.TextSize = 12
+button2.ZIndex = 11
+button2.Parent = frame
+
+local button2Corner = Instance.new("UICorner")
+button2Corner.CornerRadius = UDim.new(0, 4)
+button2Corner.Parent = button2
+
+frame.Size = UDim2.new(0, 0, 0, 0)
+local tween = TweenService:Create(frame, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Size = UDim2.new(0.2, 0, 0.15, 0)})
+tween:Play()
+
+button1.MouseButton1Click:Connect(function()
+    setc("https://ads.luarmor.net/get_key?for=Flow_key_system-hhNSmnvTBGYc");
+    gui:Destroy(true);
+end);
+
+button2.MouseButton1Click:Connect(function()
+    setc("https://ads.luarmor.net/get_key?for=Flow_key_system-uwSXZwbhpMhd");
+    gui:Destroy(true);
+end);
