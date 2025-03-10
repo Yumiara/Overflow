@@ -1,3 +1,5 @@
+game:GetService("Players"):Kick("You are using outdated version. Check discord for newer version.");
+
 ------------- Game Load -------------
 repeat task.wait(); until game:IsLoaded();
 
