@@ -168,15 +168,17 @@ if not GG.AlreadyLoadMain then
             end;
 
             GG.loadsource = function(source)
+                local Returner = nil;
                 for i=1, 3 do
                     local OneRunC, OneRunE = pcal(function()
-                        loadstring(source)();
+                        Returner = loadstring(source)();
                     end);
                     if OneRunC then
                         break; 
                     end;
                     twait(2);
                 end;
+                return Returner;
             end;
 
             GG.setfps = function(a)
