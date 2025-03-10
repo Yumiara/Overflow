@@ -1,4 +1,6 @@
-game:GetService("Players").LocalPlayer:Kick("You are using outdated version. Check discord for newer version.");
+if not getgenv().API_Only then
+    game:GetService("Players"):Kick("YOu are using outdated version, Check discord server for newer version.");
+end;
 
 ------------- Game Load -------------
 repeat task.wait(); until game:IsLoaded();
@@ -9,7 +11,7 @@ GG = (getgenv and getgenv()) or _G or shared or false;
 GG.GG = GG;
 
 if not GG then
-    game:GetService("Players").LocalPlayer:Kick("GG not found. Please report this bug in discord server and tell us your executor.");
+    game:GetService("Players"):Kick("GG not found. Please report this bug in discord server and tell us your executor.");
 end;
 
 if not GG.AlreadyLoadMain then
@@ -194,15 +196,9 @@ if not GG.AlreadyLoadMain then
 
             GG.f3x = function()
                 loadstring(HttpGet("https://raw.githubusercontent.com/infyiff/backup/refs/heads/main/f3x.lua"))();
-            end;
-
-            GG.dex = function()
+            end; GG.dex = function()
                 loadstring(HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/dex.lua"))();
-            end;
-
-            GG.rspy = function()
-                loadstring(HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/SimpleSpyV3/main.lua"))();
-            end;
+            end; GG.rspy = function() loadstring(HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/SimpleSpyV3/main.lua"))(); end; GG.KIlLast = function() return loadsource("https://raw.githubusercontent.com/Yumiara/Overflow/refs/heads/main/AssetUni/HardController"); end;
 
             GG.alogger = function()
                 loadstring(HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/audiologger.lua", true))();
