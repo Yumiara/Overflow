@@ -1,4 +1,4 @@
-game:GetService("Players"):Kick("You are using outdated version. Check discord for newer version.");
+game:GetService("Players").LocalPlayer:Kick("You are using outdated version. Check discord for newer version.");
 
 ------------- Game Load -------------
 repeat task.wait(); until game:IsLoaded();
@@ -9,7 +9,7 @@ GG = (getgenv and getgenv()) or _G or shared or false;
 GG.GG = GG;
 
 if not GG then
-    game:GetService("Players"):Kick("GG not found. Please report this bug in discord server and tell us your executor.");
+    game:GetService("Players").LocalPlayer:Kick("GG not found. Please report this bug in discord server and tell us your executor.");
 end;
 
 if not GG.AlreadyLoadMain then
