@@ -137,7 +137,7 @@ if not GG.AlreadyLoadMain then
             GG.cmdm = selff:GetMouse();
 
             GG.ScreenPointToRay = function(x, y)
-                Cam:ScreenPointToRay(x, y);
+                return Cam:ScreenPointToRay(x, y);
             end;
 
             GG.dist = function(position)
