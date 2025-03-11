@@ -24,20 +24,29 @@ if not GG.AlreadyLoadMain then
             GG.tablein = table.insert;
             GG.tablecl = table.clear;
             GG.tablef = table.find;
+            GG.concat = table.concat;
             GG.print = print;
             GG.tk = task;
             GG.tspawn = tk.spawn;
             GG.twait = tk.wait;
+            GG.wait = wait;
             GG.tdelay = task.delay;
             GG.wait = wait;
             GG.Vec3 = Vector3.new;
+            GG.Vec2 = Vector2.new;
+            GG.Dim2 = UDim2.new;
+            GG.Dim = UDim.new;
+            GG.Fontn = Font.new;
+            GG.C3new = Color3.new;
             GG.CF = CFrame.new;
             GG.str = string;
             GG.strgsub = str.gsub;
             GG.strsub = str.sub;
             GG.strfind = str.find;
             GG.strlen = str.len;
+            GG.gmatch = str.gmatch;
             GG.pir = pairs;
+            GG.ipairs = ipairs;
             GG.pcal = pcall;
             GG.Instancen = Instance.new;
             GG.tick = tick;
@@ -45,7 +54,10 @@ if not GG.AlreadyLoadMain then
             GG.mfloor = math.floor;
             GG.tabler = table.remove;
             GG.fromRGB = Color3.fromRGB;
-            GG.ipairs = ipairs;
+            GG.cloneref = cloneref;
+            GG.setmetatable = setmetatable;
+            GG.typeof = typeof;
+            GG.type = type
 
             GG.IsA = function(a,b)
                 return a:IsA(b);
@@ -100,6 +112,7 @@ if not GG.AlreadyLoadMain then
 
             GG.VirtualInputManager = GetService('VirtualInputManager');
             GG.UserInputService = GetService("UserInputService");
+            GG.ContentProvider = GetService('ContentProvider');
             GG.VU = GetService("VirtualUser");
             GG.T = GetService("TeleportService");
             GG.HttpService = GetService("HttpService");
@@ -111,6 +124,9 @@ if not GG.AlreadyLoadMain then
             GG.H = GetService("RunService");
             GG.R = GetService("ReplicatedStorage");
             GG.TweenService = GetService("TweenService");
+            GG.HttpService = GetService("HttpService");
+            GG.TextService = GetService("TextService");
+            GG.Debris = GetService("Debris");
             GG.Cam = WaitForChild(W, "Camera");
             GG.selff = P.LocalPlayer;
             GG.Backpack = selff.Backpack;
@@ -119,6 +135,10 @@ if not GG.AlreadyLoadMain then
             GG.selc = selff.Character;
 
             GG.cmdm = selff:GetMouse();
+
+            GG.ScreenPointToRay = function(x, y)
+                Cam:ScreenPointToRay(x, y);
+            end;
 
             GG.dist = function(position)
                 return selff:DistanceFromCharacter(position);
@@ -172,15 +192,17 @@ if not GG.AlreadyLoadMain then
             end;
 
             GG.loadsource = function(source)
+                local Returned = nil;
                 for i=1, 3 do
                     local OneRunC, OneRunE = pcal(function()
-                        loadstring(source)();
+                        Returned = loadstring(source)();
                     end);
                     if OneRunC then
                         break; 
                     end;
                     twait(2);
                 end;
+                return Returned;
             end;
 
             GG.setfps = function(a)
