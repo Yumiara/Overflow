@@ -195,7 +195,7 @@ if GameId == 4367208330 then -- Pressure
 	Kick("Check status");
 elseif GameId == 1235188606 then -- Dragon Adventure
 	scrName = "https://raw.githubusercontent.com/Yumiara/Overflow/refs/heads/main/API_K";
-elseif GameId == 13772394625 then -- blade ball
+elseif GameId == 4777817887 then -- blade ball
 	scrName = "https://raw.githubusercontent.com/Yumiara/Overflow/refs/heads/main/API_K";
 elseif GameId == 2440500124 then -- Door
 	Kick("Check status");
