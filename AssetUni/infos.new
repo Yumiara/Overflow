@@ -1,0 +1,173 @@
+local function SetStandardInfo(Tab)
+    local Infos = {};
+
+    local uiData = {
+        {
+            module = {
+                title = 'Flow',
+                flag = 'standard_information_flowinfo',
+                description = "This will give you important information.",
+                section = 'left',
+                callback = function(value) end
+            },
+            paragraphs = {
+                {
+                    title = "Flow",
+                    customScale = 110,
+                    text = "Flow is a script hub that supports many games on the Roblox platform and is developed by just two people: Ironic and TTJY. The Flow script's source code is obfuscated, meaning you are not allowed to copy or use it for personal gain or profit except when it is used for in-game items or selling them."
+                },
+                {
+                    title = "Executor",
+                    customScale = 80,
+                    text = "Flow supports all executors and devices, but that doesn't mean every feature is compatible with them."
+                }
+            }
+        },
+        {
+            module = {
+                title = 'FPS',
+                flag = 'standard_information_fps',
+                description = "This will give you important information.",
+                section = 'left',
+                callback = function(value) end
+            },
+            paragraphs = {
+                {
+                    title = "FPS Drop",
+                    customScale = 85,
+                    text = "If this is your first time executing this script or if you have just completed the key system during this execution, you will need to rejoin to remove the key system's background handling and reduce lag."
+                }
+            }
+        },
+        {
+            module = {
+                title = 'Bloxfruit',
+                flag = 'standard_information_bloxfruit',
+                description = "This will give you important information.",
+                section = 'left',
+                callback = function(value) end
+            },
+            paragraphs = {
+                {
+                    title = "Missing Information?",
+                    customScale = 85,
+                    text = "Join Bloxfruit to read Bloxfruit informations."
+                },
+
+            }
+        },
+        {
+            module = {
+                title = 'Fisch',
+                flag = 'standard_information_fisch',
+                description = "This will give you important information.",
+                section = 'left',
+                callback = function(value) end
+            },
+            paragraphs = {
+                {
+                    title = "Missing Information?",
+                    customScale = 85,
+                    text = "Join Fisch to read Fisch informations."
+                },
+
+            }
+        },
+        {
+            module = {
+                title = 'The Mimic',
+                flag = 'standard_information_themimic',
+                description = "This will give you important information.",
+                section = 'left',
+                callback = function(value) end
+            },
+            paragraphs = {
+                {
+                    title = "Missing Information?",
+                    customScale = 85,
+                    text = "Soon."
+                },
+
+            }
+        },
+        {
+            module = {
+                title = 'Blade Ball',
+                flag = 'standard_information_bladeball',
+                description = "This will give you important information.",
+                section = 'right',
+                callback = function(value) end
+            },
+            paragraphs = {
+                {
+                    title = "Missing Information?",
+                    customScale = 85,
+                    text = "Soon."
+                },
+
+            }
+        },
+        {
+            module = {
+                title = 'Dragon Adventure',
+                flag = 'standard_information_dragonadventure',
+                description = "This will give you important information.",
+                section = 'right',
+                callback = function(value) end
+            },
+            paragraphs = {
+                {
+                    title = "Missing Information?",
+                    customScale = 85,
+                    text = "Soon."
+                },
+
+            }
+        },
+        {
+            module = {
+                title = 'Blue Lock Rival',
+                flag = 'standard_information_bluelockrival',
+                description = "This will give you important information.",
+                section = 'right',
+                callback = function(value) end
+            },
+            paragraphs = {
+                {
+                    title = "Missing Information?",
+                    customScale = 85,
+                    text = "Soon."
+                },
+
+            }
+        },
+        {
+            module = {
+                title = 'Flow Universal',
+                flag = 'standard_information_universal',
+                description = "This will give you important information.",
+                section = 'right',
+                callback = function(value) end
+            },
+            paragraphs = {
+                {
+                    title = "Missing Information?",
+                    customScale = 85,
+                    text = "Soon."
+                },
+
+            }
+        }
+    };
+    for i, data in ipairs(uiData) do
+        Infos["S" .. i .. "_ActualIs_" .. data.module.flag:match("standard_information_(%w+)")] = Tab:create_module(data.module);
+
+        for _, paragraph in ipairs(data.paragraphs) do
+            Infos["S" .. i .. "_ActualIs_" .. data.module.flag:match("standard_information_(%w+)")]:create_paragraph(paragraph);
+        end;
+    end;
+
+    return Infos;
+end;
+
+return SetStandardInfo;
